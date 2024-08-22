@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals – Part 1</title>
+
+    <h1>Coding Challenge #3</h1>
+    <script>
+        let dolphinS = [96, 108, 89];
+        let koalaS = [88, 91, 110];
+
+        function caculateAverage(scores) {
+            let sum = scores.reduce((a, b) => a + b, 0);
+            return sum / scores.length;
+        }
+
+        let dolphinCaculated = caculateAverage(dolphinS);
+        let koalaCaculated = caculateAverage(koalaS);
+
+        console.log("Dolphin Average: " + dolphinCaculated);
+        console.log("Koala Average: " + koalaCaculated);
+
+        if (dolphinCaculated > koalaCaculated) {
+            console.log("Dolphins win!!");
+        } else if (dolphinCaculated < koalaCaculated) {
+            console.log("Koala win!!");
+        } else {
+            console.log("It's a draw!!");
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
